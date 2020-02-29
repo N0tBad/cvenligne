@@ -1,0 +1,368 @@
+#bloc_page{    /* centre la page afin d'avoir un rendu proche de la maquette*/     
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    width: 30%;
+    float: left;
+    background-color:#4FC3F7;
+    border-color: #4FC3F7;
+    display: flex;
+    flex-direction: column; /*organise le contenu en colonne*/
+    align-content: flex-start; /*positionne la partie aside au début, en flexbox on raisonne en terme de début et de fin (gauche et droite) */
+}
+
+aside h1{
+    text-align: center;
+    color:#4FC3F7;
+    background-color: #616161;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style-type: none;   /*retire les puces de l'ensemble du document*/
+}
+
+img {
+    height: 3.5em;
+    width: 3.5em;
+    line-height: 3.5em;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: solid gray;
+} 
+   
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+  
+.apropos{
+    text-align: justify;
+    margin:8%;
+    margin-bottom: 14em;
+}
+
+.icones_loisirs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    color: #616161;
+}
+
+#bloc_droit{ 
+    background-color: aliceblue;
+    flex: 1; /*propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.*/
+}
+
+.titre_header{
+    margin-left: 5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.titre_header h1{
+    margin-bottom: -0.3em;  
+}
+
+#prenom{
+    color:#4FC3F7
+}
+
+#dev{
+    border-bottom: 0.1em solid #4FC3F7;
+}
+
+.image_header{
+    visibility:hidden;
+    margin-bottom: -9em;
+}
+
+#corps_page{
+    margin-top: 4em;
+}
+
+.icon{          /*couleur des icones de la page du centre*/
+    color:#4FC3F7 ;
+}
+
+.titre_formation{
+    margin-left: 3em;
+    border-bottom: 0.1em solid #4FC3F7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.diplome_obtenu1{
+    margin-top: 0.5em; 
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row
+}
+
+.diplome_OC h3,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.diplome_OC h5{
+    margin-top: -1em;
+}
+
+.diplome_OC p{
+    margin-top: -1em;
+}
+.diplome_OC{
+    margin-left: 8em;
+}
+
+.date_OC{
+    margin-left: 1em;
+}
+
+.dot_OC{
+    margin-top: 1.2em;
+    margin-left: 2em;
+}
+
+.diplome_obtenu2{
+    margin-top: 0.5em; 
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row
+}
+
+.diplome_DUT h3,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.diplome_DUT{
+    margin-left: 8em;
+}
+
+.diplome_DUT h5{
+    margin-top: -1em;
+}
+
+.diplome_DUT p{
+    margin-top: -1em;
+}
+
+.date_DUT{
+    margin-left: 1em;
+}
+
+.dot_DUT{
+    margin-top: 1.2em;
+    margin-left: 2em;
+}
+
+
+.titre_experience{
+    margin-left: 3em;
+    border-bottom: 0.1em solid #4FC3F7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience_acquise1{
+    margin-top: 0.5em; 
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row
+}
+
+.experience_TP1{
+    margin-left: 4.4em;
+}
+
+.experience_TP1 h3,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience_TP1 h5{
+    margin-top: -1em;
+}
+
+.experience_TP1 p{
+    margin-top: -1em;
+}
+
+.date_TP1{
+    margin-left: 1em;
+}
+
+.dot_TP1{
+    margin-top: 1.2em;
+    margin-left: 2em;
+}
+
+.experience_acquise2{
+    margin-top: -0.5em; 
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row
+}
+
+.experience_TP2{
+    margin-left: 3em;
+}
+
+.experience_TP2 h3,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience_TP2 h5{
+    margin-top: -1em;
+}
+
+.experience_TP2 p{
+    margin-top: -1em;
+}
+
+.date_TP2{
+    margin-left: 1em;
+}
+
+.dot_TP2{
+    margin-top: 1.2em;
+    margin-left: 2em;
+}
+
+.experience_acquise3{
+    margin-top: -0.5em; 
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row
+}
+
+.experience_AXA{
+    margin-left: 4em;
+}
+
+.experience_AXA h3,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience_AXA h5{
+    margin-top: -1em;
+}
+
+.experience_AXA p{
+    margin-top: -1em;
+}
+
+.date_AXA{
+    margin-left: 1em;
+}
+
+.dot_AXA{
+    margin-top: 1.2em;
+    margin-left: 2em;
+}
+
+.recommandation{
+    margin-top: 1em;
+    margin-left: 3em;
+    border-bottom: 0.1em solid #4FC3F7;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+#ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+}
+
+.ul2{
+    margin-left: 3em;
+}
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (max-width:930px){
+    #bloc_page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+/*aside part*/
+
+    aside{
+        width: 900px;
+    }
+
+    .contact_ul{
+        text-align: center;
+        margin-right: 3em;
+    }
+
+    .apropos{
+        text-align: justify;
+        margin:8%;
+    }
+
+/*header*/
+
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: space-between;
+        
+    }
+
+    /*gestion de l'affichage de l'image et de l'espace*/
+
+    .image{
+        visibility: hidden;
+    }
+    .image{
+        margin-top: -5em;
+    }
+
+    .image_header{
+        visibility: visible;
+        margin-top: 1.5em;
+    }
+
+    .titre_header{
+        margin-right: 15em;
+    }
+
+/*experience : ajustement des puces et paragraphes*/
+
+    .experience_TP1{
+        margin-left: 3em;
+    } 
+
+/*ajustement du bloc recommandation*/
+
+    #ul{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+        justify-content: center;
+    }
+    
+    .ul2{
+        margin-left: 3em;
+    }
+
+}
+
+
+
