@@ -15,7 +15,7 @@ aside{
     align-content: flex-start; /*positionne la partie aside au début, en flexbox on raisonne en terme de début et de fin (gauche et droite) */
 }
 
-aside h1{
+aside h2{
     text-align: center;
     color:#4FC3F7;
     background-color: #616161;
@@ -289,80 +289,4 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
 }
-
-/*MEDIA QUERIES*/
-
-@media all and (max-width:930px){
-    #bloc_page{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-/*aside part*/
-
-    aside{
-        width: 900px;
-    }
-
-    .contact_ul{
-        text-align: center;
-        margin-right: 3em;
-    }
-
-    .apropos{
-        text-align: justify;
-        margin:8%;
-    }
-
-/*header*/
-
-    header{
-        display: flex;
-        flex-direction: row-reverse;
-        align-content: space-between;
-        
-    }
-
-    /*gestion de l'affichage de l'image et de l'espace*/
-
-    .image{
-        visibility: hidden;
-    }
-    .image{
-        margin-top: -5em;
-    }
-
-    .image_header{
-        visibility: visible;
-        margin-top: 1.5em;
-    }
-
-    .titre_header{
-        margin-right: 15em;
-    }
-
-/*experience : ajustement des puces et paragraphes*/
-
-    .experience_TP1{
-        margin-left: 3em;
-    } 
-
-/*ajustement du bloc recommandation*/
-
-    #ul{
-        display: flex;
-        flex-direction: row;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-        margin-left: 1em;
-        justify-content: center;
-    }
-    
-    .ul2{
-        margin-left: 3em;
-    }
-
-}
-
-
 
