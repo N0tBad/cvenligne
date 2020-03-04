@@ -23,8 +23,8 @@ aside h2{
     font-family: 'Montserrat', sans-serif;
 }
 
-li{
-    list-style-type: none;   /*retire les puces de l'ensemble du document*/
+.contact_particulier{
+    margin-left: 1.7em;
 }
 
 img {
@@ -275,6 +275,10 @@ img {
    
 }
 
+li{
+    list-style-type: none;   /*retire les puces de l'ensemble du document*/
+}
+
 #ul{
     display: flex;
     flex-direction: row;
@@ -290,3 +294,79 @@ img {
     font-weight:bold;
 }
 
+@media screen and (max-width: 920px) {
+       
+    #bloc_page{
+        width: auto;
+        margin: auto;
+    }  
+
+    .formation{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #bloc_page{
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside{
+        width: auto;
+    }
+
+    .contact_particulier{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: auto;
+    }
+
+    .contact_p2{
+        visibility: hidden;
+    }
+
+    .contact_p4{
+        visibility: hidden;
+    }
+
+    .image{
+        visibility: hidden;
+        margin: auto;
+    }
+
+    .apropos{
+        margin: auto;
+   }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;   
+    }
+
+    .image_header{
+        visibility: visible;
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    .titre_header{
+        margin: auto;
+    }
+
+    .titre_formation{
+        margin: auto;
+    }
+
+    .titre_experience{
+        margin: auto;
+    }
+
+    .recommandation{
+        margin: auto;
+    }
+}
