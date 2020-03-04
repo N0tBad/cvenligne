@@ -1,4 +1,4 @@
-#bloc_page{    /* centre la page afin d'avoir un rendu proche de la maquette*/     
+#bloc_page{  
     width: 900px;
     margin: auto;
     display: flex;
@@ -11,8 +11,8 @@ aside{
     background-color:#4FC3F7;
     border-color: #4FC3F7;
     display: flex;
-    flex-direction: column; /*organise le contenu en colonne*/
-    align-content: flex-start; /*positionne la partie aside au début, en flexbox on raisonne en terme de début et de fin (gauche et droite) */
+    flex-direction: column; 
+    align-content: flex-start;
 }
 
 aside h2{
@@ -61,7 +61,11 @@ img {
 
 #bloc_droit{ 
     background-color: aliceblue;
-    flex: 1; /*propriété raccourcie qui définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur.*/
+    flex: 1; 
+}
+
+header{
+    margin-top: 7%;
 }
 
 .titre_header{
@@ -87,192 +91,49 @@ img {
     margin-bottom: -9em;
 }
 
-#corps_page{
-    margin-top: 4em;
+.titre_blocdroit{
+    margin-top: 7%;
+    margin-left: 5%;
+    border-bottom: 0.1em solid #4FC3F7;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.icon{          /*couleur des icones de la page du centre*/
+.icon{
     color:#4FC3F7 ;
 }
 
-.titre_formation{
-    margin-left: 3em;
-    border-bottom: 0.1em solid #4FC3F7;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.diplome_obtenu1{
-    margin-top: 0.5em; 
-    margin-left: 1em;
+.parcours{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
 }
 
-.diplome_OC h3,h5{
+.dot{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.date{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.diplome_formation{
+    margin-left: 15%;
+}
+
+.diplome_formation h4,h5{
     font-family: 'Montserrat', sans-serif;
 }
 
-.diplome_OC h5{
-    margin-top: -1em;
-}
-
-.diplome_OC p{
-    margin-top: -1em;
-}
-.diplome_OC{
-    margin-left: 8em;
-}
-
-.date_OC{
-    margin-left: 1em;
-}
-
-.dot_OC{
-    margin-top: 1.2em;
-    margin-left: 2em;
-}
-
-.diplome_obtenu2{
-    margin-top: 0.5em; 
-    margin-left: 1em;
-    display: flex;
-    flex-direction: row
-}
-
-.diplome_DUT h3,h5{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.diplome_DUT{
-    margin-left: 8em;
-}
-
-.diplome_DUT h5{
-    margin-top: -1em;
-}
-
-.diplome_DUT p{
-    margin-top: -1em;
-}
-
-.date_DUT{
-    margin-left: 1em;
-}
-
-.dot_DUT{
-    margin-top: 1.2em;
-    margin-left: 2em;
-}
-
-
-.titre_experience{
-    margin-left: 3em;
-    border-bottom: 0.1em solid #4FC3F7;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.experience_acquise1{
-    margin-top: 0.5em; 
-    margin-left: 1em;
-    display: flex;
-    flex-direction: row
-}
-
-.experience_TP1{
-    margin-left: 4.4em;
-}
-
-.experience_TP1 h3,h5{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.experience_TP1 h5{
-    margin-top: -1em;
-}
-
-.experience_TP1 p{
-    margin-top: -1em;
-}
-
-.date_TP1{
-    margin-left: 1em;
-}
-
-.dot_TP1{
-    margin-top: 1.2em;
-    margin-left: 2em;
-}
-
-.experience_acquise2{
-    margin-top: -0.5em; 
-    margin-left: 1em;
-    display: flex;
-    flex-direction: row
-}
-
-.experience_TP2{
-    margin-left: 3em;
-}
-
-.experience_TP2 h3,h5{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.experience_TP2 h5{
-    margin-top: -1em;
-}
-
-.experience_TP2 p{
-    margin-top: -1em;
-}
-
-.date_TP2{
-    margin-left: 1em;
-}
-
-.dot_TP2{
-    margin-top: 1.2em;
-    margin-left: 2em;
-}
-
-.experience_acquise3{
-    margin-top: -0.5em; 
-    margin-left: 1em;
-    display: flex;
-    flex-direction: row
-}
-
-.experience_AXA{
-    margin-left: 4em;
-}
-
-.experience_AXA h3,h5{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.experience_AXA h5{
-    margin-top: -1em;
-}
-
-.experience_AXA p{
-    margin-top: -1em;
-}
-
-.date_AXA{
-    margin-left: 1em;
-}
-
-.dot_AXA{
-    margin-top: 1.2em;
-    margin-left: 2em;
+.diplome_formation h5,p{
+    margin-top: -5%;
 }
 
 .recommandation{
     margin-top: 1em;
     margin-left: 3em;
     border-bottom: 0.1em solid #4FC3F7;
-    font-family: 'Montserrat', sans-serif;
-   
+    font-family: 'Montserrat', sans-serif; 
 }
 
 li{
@@ -294,43 +155,23 @@ li{
     font-weight:bold;
 }
 
-@media screen and (max-width: 920px) {
-       
-    #bloc_page{
-        width: auto;
-        margin: auto;
-    }  
+@media screen and (max-width: 900px){
 
-    .formation{
-        margin: auto;
+    #bloc_page{  
+        width: auto;
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 670px){
 
-    #bloc_page{
-        width: auto;
-        margin: auto;
+    #bloc_page{  
         display: flex;
         flex-direction: column-reverse;
+        width: auto;
     }
 
     aside{
         width: auto;
-    }
-
-    .contact_particulier{
-        display: flex;
-        flex-direction: row-reverse;
-        margin: auto;
-    }
-
-    .contact_p2{
-        visibility: hidden;
-    }
-
-    .contact_p4{
-        visibility: hidden;
     }
 
     .image{
@@ -345,7 +186,10 @@ li{
     header{
         display: flex;
         flex-direction: column;
-        text-align: center;   
+    }
+
+    .image{
+        display: none;
     }
 
     .image_header{
@@ -354,19 +198,29 @@ li{
         margin-top: 2em;
     }
 
-    .titre_header{
+    .titre_blocdroit{
         margin: auto;
     }
+}
 
-    .titre_formation{
-        margin: auto;
+@media screen and (max-width: 500px){
+
+    #bloc_page{  
+        display: flex;
+        flex-direction: column-reverse;
+        width: auto;
     }
 
-    .titre_experience{
-        margin: auto;
+    .ul2{
+        display: none;
     }
 
-    .recommandation{
-        margin: auto;
+    .parcours{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dot{
+        visibility: hidden;
     }
 }
