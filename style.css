@@ -25,6 +25,7 @@ aside h2{
 
 .contact_particulier{
     margin-left: 1.7em;
+    margin-top: 10%;
 }
 
 img {
@@ -206,6 +207,10 @@ li{
 
     .image{
         display: none;
+    }
+
+    .contact_particulier{
+        margin: auto;
     }
 
     .apropos{
