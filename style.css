@@ -109,16 +109,17 @@ header{
 
 .dot{
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 .date{
     margin-left: 3%;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 
 .diplome_formation{
     margin-left: 15%;
+    margin-top: 3%;
 }
 
 .diplome_formation h4,h5{
@@ -126,6 +127,35 @@ header{
 }
 
 .diplome_formation h5,p{
+    margin-top: -5%;
+}
+
+.parcours_tp{
+    display: flex;
+    flex-direction: row;
+    margin-left: -3%;
+}
+
+.dot_tp{
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+.date_tp{
+    margin-left: 3%;
+    margin-top: 6%;
+}
+
+.diplome_formation_tp{
+    margin-left: 11.5%;
+    margin-top: 3%;
+}
+
+.diplome_formation_tp h4,h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.diplome_formation_tp h5,p{
     margin-top: -5%;
 }
 
@@ -175,21 +205,20 @@ li{
     }
 
     .image{
-        visibility: hidden;
-        margin: auto;
+        display: none;
     }
 
     .apropos{
         margin: auto;
    }
-
+    
     header{
         display: flex;
         flex-direction: column;
     }
 
     .image{
-        display: none;
+        visibility: hidden;
     }
 
     .image_header{
@@ -219,8 +248,17 @@ li{
         display: flex;
         flex-direction: column;
     }
-    
+
     .dot{
+        visibility: hidden;
+    }
+
+    .parcours_tp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dot_tp{
         visibility: hidden;
     }
 }
