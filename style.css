@@ -245,6 +245,10 @@ li{
         width: auto;
     }
 
+    #bloc_droit{
+        margin: auto;
+    }
+
     .ul2{
         display: none;
     }
@@ -254,8 +258,19 @@ li{
         flex-direction: column;
     }
 
+    .diplome_formation{
+        margin: auto;
+        margin-left: 3%;
+    }
+
     .dot{
         visibility: hidden;
+    }
+
+
+    .diplome_formation_tp{
+        margin: auto;
+        margin-left: 5%;
     }
 
     .parcours_tp{
@@ -266,4 +281,9 @@ li{
     .dot_tp{
         visibility: hidden;
     }
+
+    .date_tp{
+        margin-left: 5.5%;
+    }
+
 }
