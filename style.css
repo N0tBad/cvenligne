@@ -49,7 +49,7 @@ img {
 .apropos{
     text-align: justify;
     margin:8%;
-    margin-bottom: 14em;
+    margin-bottom: 120%;
 }
 
 .icones_loisirs{
@@ -246,6 +246,10 @@ li{
     }
 
     #bloc_droit{
+        margin: auto;
+    }
+
+    .titre_header{
         margin: auto;
     }
 
