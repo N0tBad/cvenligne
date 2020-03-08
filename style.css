@@ -254,6 +254,10 @@ li{
         margin: auto;
     }
 
+    .ul1{
+        margin-left: -18%;
+    }
+
     .ul2{
         display: none;
     }
