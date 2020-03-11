@@ -100,6 +100,10 @@ header{
     font-family: 'Montserrat', sans-serif;
 }
 
+.titre_blocdroit_h3{
+    margin-left: 5%;
+}
+
 .icon{
     color:#4FC3F7 ;
 }
